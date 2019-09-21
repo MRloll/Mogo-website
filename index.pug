@@ -1,0 +1,757 @@
+doctype
+html
+    head
+        meta(charset="UTF-8")
+        meta(meta name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="keywords" content="HTML,CSS,XML,JavaScript")
+        meta(name="author" content="MR. Loll")
+        title Mogo
+        link(rel="shortcut icon" type="image/x-icon" href="images/responsive.ico")
+        link(rel="stylesheet" href="css/animate.css" type="text/css")
+        link(rel="stylesheet" href="css/all.min.css" type="text/css")
+        link(rel="stylesheet" href="css/bootstrap.min.css" type="text/css")
+        link(rel="stylesheet" href="css/style.css" type="text/css")
+        link(href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet")
+
+    body
+        //start scroll top button
+        a(class="scroll-top", href="#")
+            i(class="fas fa-chevron-up")
+        //===========================
+        //    start header
+        //===========================
+        header
+            .container
+                //===========================
+                //    start nav bar
+                //===========================
+                section.nav
+                    .brand
+                        h2 Mo#[span Go]
+                    i(class="fas fa-bars menu-bar")
+                    nav                        
+                        ul                            
+                            li.active 
+                                a(href="#" data-id="about") about
+                            li 
+                                a(href="#" data-id="service") service
+                            li
+                                a(href="#" data-id='our-team') our team 
+                            li 
+                                a(href="#" data-id="our-work") work
+                            li 
+                                a(href="#"  data-id='testemonials') testemonials
+                            li #[img(src="images/magnifying-glass.png")]
+                            li #[img(src="images/shopping-cart.png")]
+                //===========================
+                //    start slider
+                //===========================
+                .clearfix
+                section.slider
+                    //===========================
+                    //    start intro slide
+                    //===========================                    
+                    div(class="slide intro text-content active wow fadeIn " data-wow-duration="2s")
+                        h3 Creative Template
+                        h1 Welcome <br/> to MoGo
+                        .hr-holder
+                            hr
+                        button(class="btn btn-transparent") learn more
+
+                    //===========================
+                    //    start about slide
+                    //===========================                                           
+                    div(class=" slide about ")
+                        div(class="row align-items-center")
+                        
+                            div(class="col-12 col-lg-7 wow fadeInLeft" data-wow-duration="2s")
+                                h3 we are 
+                                h1 an innovative #[br] web developing #[br] compay
+                                button(class="btn btn-transparent") learn more
+                                
+                            div(class="col-7 col-lg-5 mr-auto ml-auto wow fadeInRight" data-wow-duration="2s")
+                                img(class="img-fluid" src="images/innovative.png")
+                    
+                    //===========================
+                    //    start work slide
+                    //===========================                    
+                    div(class=" slide work")
+                        div(class="row align-items-center")
+                        
+                            div(class="col-12 col-lg-6 wow fadeInLeft" data-wow-duration="2s")
+                                h3 our work is
+                                h1 carefully #[br] devised
+                                button(class="btn btn-transparent") press to see
+                                
+                            div(class="col-7 col-lg-5 mr-auto ml-auto wow fadeInRight" data-wow-duration="2s")
+                                img(class="img-fluid" src="images/devised.png")
+                    
+                    //===========================
+                    //    start contacts slide
+                    //===========================         
+                    div(class=" slide work ")
+                        div(class="row align-items-center")
+                            div(class="col-12 col-lg-6 wow fadeInLeft" data-wow-duration="2s")
+                                h3 looking for shining website!
+                                h1 contact us
+                                button(class="btn btn-transparent") contact
+                            div(class="col-7 col-md-6 col-lg-4 mr-auto ml-auto wow fadeInRight" data-wow-duration="2s")
+                                img(class="img-fluid" src="images/consumer.png")
+                
+                //===========================
+                //    start coordinators
+                //===========================                                            
+                section.coords
+                    .row
+                        //intro coordinator
+                        div(class="coord intro col-3 active")
+                            .bar
+                                .progress
+                                    span
+                            .text
+                                span 01 intro
+                        //about coordinator       
+                        div(class="coord about col-3 ")
+                            .bar
+                                .progress
+                                    span
+                            .text
+                                span 02 about
+                        //work coordinator       
+                        div(class="coord work col-3 ")
+                            .bar
+                                .progress
+                                    span
+                            .text
+                                span 03 work
+                        //contact cooredinator     
+                        div(class="coord contacts col-3 ")
+                            .bar
+                                .progress
+                                    span
+                            .text
+                                span 04 contacts
+    
+        //===========================
+        //    start about us section
+        //===========================                                                
+        section.about-us(id="about")
+            .container
+                .text-content.text-center
+                    h4 what we do
+                    h2 story about us
+                    .hr-holder
+                        hr
+                    p.lead.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        
+                //images container        
+                .images.text-center
+                    .row
+                        //image item
+                        div(class="wow fadeInUp col-sm-12 col-md-6 col-lg" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        img(class="icon img-fluid" src="images/wrench.png")
+                                        h4 super team
+                                img(class="bg img-fluid" src="images/about1.png")
+                                
+                        //image item
+                        div(class="wow fadeInUp col-12 col-md-6 col-lg" data-wow-delay=".3s" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        img(class="icon img-fluid" src="images/technical-support.png")
+                                        h4 super team
+                                img(class="bg img-fluid"  src="images/about2.png")
+                                
+                        //image item
+                        div(class="wow fadeInUp col-12 col-md-6 col-lg offset-md-3 offset-lg-0" data-wow-delay=".6s" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        img(class="icon img-fluid" src="images/sketch.png")
+                                        h4 super team
+                                img(class="bg img-fluid"  src="images/about3.png")
+        
+        //===========================
+        //    start statics section
+        //===========================                                
+        section.statics.text-center
+            .container
+                .row
+                    div(class="wow fadeInUp col-12 col-md" data-wow-duration="2s")
+                        h3(class="counter" data-count="42") 0
+                        p.capital web design projects
+                    div(class="wow fadeInUp col-12 col-md"  data-wow-delay=".3s" data-wow-duration="2s")
+                        h3(class="counter" data-count="123") 0
+                        p.capital happy client
+                    div(class="wow fadeInUp col-12 col-md"  data-wow-delay=".6s" data-wow-duration="2s")
+                        h3(class="counter" data-count="15") 0
+                        p.capital award winner
+                    div(class="wow fadeInUp col-12 col-md"  data-wow-delay=".9s" data-wow-duration="2s")
+                        h3(class="counter" data-count="99") 0
+                        p.capital cup of coffe
+                    div(class="wow fadeInUp col-12 col-md"  data-wow-delay="1.2s" data-wow-duration="2s")
+                        h3(class="counter" data-count="24") 0
+                        p.capital members
+        
+        //===========================
+        //    start services section
+        //===========================
+        section.services.text-left(id="service")
+            .container
+                //services header text
+                .text-content.text-center
+                    h4 we work with
+                    h2 amazing services
+                    .hr-holder
+                        hr
+                
+                //===========
+                // services items  
+                //===========
+                .item-service.text-md-left.text-center
+                    .row
+                        //photography item
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-duration="2s")
+                            .img
+                                img(src="images/alarm.png")
+                            .text
+                                h3 photography
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        
+                        //web design item
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-delay=".3s" data-wow-duration="2s")
+                            .img
+                                img(src="images/line-graph.png")
+                            .text
+                                h3 Web Design
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        
+                        //creativity item
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-delay=".6s" data-wow-duration="2s")
+                            .img
+                                img(src="images/computer.png")
+                            .text
+                                h3 Creativity
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        
+                        //seo item
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-delay=".9s" data-wow-duration="2s")
+                            .img
+                                img(src="images/book.png")
+                            .text
+                                h3 seo
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        
+                        //html/css item  
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-delay="1.2s" data-wow-duration="2s")
+                            .img
+                                img(src="images/home.png")
+                            .text
+                                h3= 'Css/Html'
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        
+                        //digital item
+                        div(class="wow fadeInUp item col-12 col-md-6 col-lg-4" data-wow-delay="1.5s" data-wow-duration="2s")
+                            .img
+                                img(src="images/image.png")
+                            .text
+                                h3 digital
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        
+        //===========================
+        //    start display section
+        //===========================        
+        section.display
+            .custom-container
+                .overlay
+                .text-content.text-center
+                    h4 for all devices
+                    h2 unique design
+                    .hr-holder
+                        hr
+                .content
+                    .holder
+                        img(class="img-fluid" src="images/tablet.png")
+                        div.phone
+                            img(class="img-fluid" src="images/phone.png")
+    
+        //===========================
+        //    start what we do section
+        //===========================
+        section.what-we-do
+            .container
+                .text-content.text-center
+                    h4 service
+                    h2 what we do
+                    .hr-holder
+                        hr
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                
+                .content
+                    .row
+                        div(class="col-12 col-lg-6 img text-center ")
+                            img(class="img-fluid" src="images/what-we-do.png")
+                        //start skills coontainer
+                        div(class="col-12 col-lg-6 skills")
+                            //start one skill
+                            .skill
+                                .bar
+                                    img(src="images/picture.png")
+                                    h4 photography
+                                    .cheveron.cheveron-up 
+                                .text.active.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            //start one skill
+                            .skill
+                                .bar
+                                    img(src="images/equalizer.png")
+                                    h4 creativity
+                                    .cheveron.cheveron-down
+                                .text.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            //start one skill
+                            .skill
+                                .bar
+                                    img(src="images/bullseye.png")
+                                    h4 webdesign
+                                    .cheveron.cheveron-down 
+                                .text.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        
+                //start the speach slider
+                .speach-holder
+                    .arrow.left-arrow
+                        img(src="images/arrow-left.png")
+                    ul
+                        //start one speach
+                        li.one-speach.active
+                            .speach
+                                
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name MR. Loll
+                        //start one speach
+                        li.one-speach
+                            .speach
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name jon dow
+                        //start one speach
+                        li.one-speach
+                            .speach
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name stephan hamdy
+                    .arrow.right-arrow
+                        img(src="images/arrow-right.png")
+                
+        //===========================
+        //    start our team
+        //===========================
+        section.team.text-center(id="our-team")
+            .container
+                .text-content
+                    h4 who we are 
+                    h2 meet our team
+                    .hr-holder
+                        hr
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                .images
+                    .row
+                        //image item
+                        div(class="wow fadeInUp holder col-12 col-md" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        a(href="https://www.facebook.com/walidloll", target="_blank")
+                                            i(class="fab fa-facebook-f")
+                                        a(href="https://twitter.com/walidelloll", target="_blank") 
+                                            i(class="fab fa-twitter")
+                                        a(href="https://www.instagram.com/walid.elloll/" target="_blank") 
+                                            i(class="fab fa-pinterest-p")
+                                        a(href="https://www.instagram.com/walid.elloll/" target="_blank")
+                                            i(class="fab fa-instagram")
+                                        
+                                img(class="bg img-fluid" src="images/person1.png")
+                            h5 Matthew Dix
+                            span front end developer
+
+                        //image item
+                        div(class="wow fadeInUp holder col-12 col-md" data-wow-delay=".3s" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        a(href="#")
+                                            i(class="fab fa-facebook-f")
+                                        a(href="#") 
+                                            i(class="fab fa-twitter")
+                                        a(href="#") 
+                                            i(class="fab fa-pinterest-p")
+                                        a(href="#")
+                                            i(class="fab fa-instagram")
+                                        
+                                img(class="bg img-fluid" src="images/person2.png")
+                            h5 Matthew Dix
+                            span Graphic Designer
+
+                        //image item
+                        div(class="wow fadeInUp holder col-12 col-md" data-wow-delay=".6s" data-wow-duration="2s")
+                            div.image
+                                .overlay
+                                    .content
+                                        a(href="#")
+                                            i(class="fab fa-facebook-f")
+                                        a(href="#") 
+                                            i(class="fab fa-twitter")
+                                        a(href="#") 
+                                            i(class="fab fa-pinterest-p")
+                                        a(href="#")
+                                            i(class="fab fa-instagram")
+                                        
+                                img(class="bg img-fluid" src="images/person3.png")
+                            h5 Matthew Dix
+                            span wed desinger
+        //===========================
+        //    start our work
+        //===========================
+        section.our-work(id="our-work")
+            .container
+                .text-content.text-center
+                    h4 what we do
+                    h2 some of our work
+                    .hr-holder 
+                        hr
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            //===========================
+            //    start flex photos 
+            //===========================
+            .wrapper
+                //=============
+                //four flexed photos (first section on left)
+                //=============
+                .flex.flex-1
+                    div(class="wow fadeIn box" data-wow-delay=".3s" data-wow-duration="2s")
+                        .overlay.text-center
+                            div
+                                img(src="images/pic-for-overlay.png")
+                                h5 creatively designed
+                                span Lorem ipsum dolor sit                          
+                        img(src="images/work1.png")
+                    div(class="wow fadeIn box" data-wow-delay="1s" data-wow-duration="2s")
+                        .overlay.text-center
+                            div
+                                img(src="images/pic-for-overlay.png")
+                                h5 creatively designed
+                                span Lorem ipsum dolor sit                          
+                        img(src="images/work2.png")
+                    div(class="wow fadeIn box" data-wow-delay=".5s"  data-wow-duration="2s")
+                        .overlay.text-center
+                            div
+                                img(src="images/pic-for-overlay.png")
+                                h5 creatively designed
+                                span Lorem ipsum dolor sit                          
+                        img(src="images/work3.png")
+                    div(class="wow fadeIn box" data-wow-delay=".8s"  data-wow-duration="2s")
+                        .overlay.text-center
+                            div
+                                img(src="images/pic-for-overlay.png")
+                                h5 creatively designed
+                                span Lorem ipsum dolor sit                          
+                        img(src="images/work4.png")
+                //=============
+                //four flexed photos (section on right)
+                //=============
+
+                .flex.flex-2
+                    //=============
+                    //the tallest photo (section on rigth)
+                    //=============
+                    .fifty
+                        div(class="wow fadeIn big box" data-wow-delay="1.3s"  data-wow-duration="2s")
+                            .overlay.text-center
+                                div
+                                    img(src="images/pic-for-overlay.png")
+                                    h5 creatively designed
+                                    span Lorem ipsum dolor sit                          
+                            img(src="images/work5.png")
+
+                    //=============
+                    //the other two photos (section on rigth)
+                    //=============
+                    .fifty
+                        div(class="wow fadeIn box" data-wow-delay=".4s"  data-wow-duration="2s")
+                            .overlay.text-center
+                                div
+                                    img(src="images/pic-for-overlay.png")
+                                    h5 creatively designed
+                                    span Lorem ipsum dolor sit                          
+                            img(src="images/work6.png")
+                        div(class="wow fadeIn box" data-wow-delay=".7s"  data-wow-duration="2s")
+                            .overlay.text-center
+                                div
+                                    img(src="images/pic-for-overlay.png")
+                                    h5 creatively designed
+                                    span Lorem ipsum dolor sit                          
+                            img(src="images/work7.png")
+            //===========
+            // start the speach slider                            
+            //===========
+            .container
+                .speach-holder
+                    .arrow.left-arrow.d
+                        img(src="images/arrow-left.png")
+                    ul
+                        //start one speach
+                        li.one-speach.active
+                            .speach
+                                
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name MR. Loll
+                        //start one speach
+                        li.one-speach
+                            .speach
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name jon dow
+                        //start one speach
+                        li.one-speach
+                            .speach
+                                .img
+                                    img(src="images/speach.png")
+                                .text
+                                    p.
+                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                    span.name stephan hamdy
+                    .arrow.right-arrow
+                        img(src="images/arrow-right.png")
+
+        //===========================
+        //    start display section
+        //===========================        
+        section.clients(id="testemonials")
+            .container
+                .overlay
+                .text-content.text-center
+                    h4 happy clients
+                    h2 what people say
+                    .hr-holder
+                        hr
+                .content                    
+                    .row
+                        //client
+                        div(class="wow fadeInUp client col-12 col-lg-6" data-wow-duration="2s")
+                            .img
+                                img(src="images/client1.png")
+                            .text
+                                h3 Matthew Dix
+                                span graphic designer
+                                .hr-holder
+                                    hr
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        //client
+                        div(class="wow fadeInUp client col-12 col-lg-6" data-wow-delay=".3s"  data-wow-duration="2s")
+                            .img
+                                img(src="images/client2.png")
+                            .text
+                                h3 Nick Karvounis
+                                span graphic designer
+                                .hr-holder
+                                    hr
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        //client
+                        div(class="wow fadeInUp client col-12 col-lg-6" data-wow-delay=".6s"  data-wow-duration="2s")
+                            .img
+                                img(src="images/client3.png")
+                            .text
+                                h3 Jaelynn Castillo 
+                                span graphic designer
+                                .hr-holder
+                                    hr
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        //client
+                        div(class="wow fadeInUp client col-12 col-lg-6" data-wow-delay=".9s"  data-wow-duration="2s")
+                            .img
+                                img(src="images/client4.png")
+                            .text
+                                h3 Mike Petrucci
+                                span graphic designer
+                                .hr-holder
+                                    hr
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+        //===========================
+        //    start blogs section
+        //===========================        
+        section.blog
+            .container
+                .text-content.text-center
+                    h4 our stories
+                    h2 latest blog
+                    .hr-holder
+                        hr
+                .content
+                    .row
+                        //start one blog
+                        div(class="wow fadeInUp col-12 col-md-6 col-lg" data-wow-duration="2s")
+                            .card
+                                .img-holder
+                                    img(src="images/blog1.png")
+                                    span.date #[h3 15] jan
+                                div(class="card-body")
+                                    h5.card-title Lorem ipsum dolor sit amet
+                                    p.card-text Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                div.statistics
+                                    span #[img(src="images/view.png")] 122
+                                    span #[img(src="images/speach-bubble.png")] 14
+
+                        //start one blog
+                        div(class="wow fadeInUp col-12 col-md-6 col-lg" data-wow-delay=".3s"  data-wow-duration="2s")
+                            .card
+                                .img-holder
+                                    img(src="images/blog2.png")
+                                    span.date #[h3 14] jan
+                                div(class="card-body")
+                                    h5.card-title sed do eiusmod tempor
+                                    p.card-text Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                div.statistics
+                                    span #[img(src="images/view.png")] 542
+                                    span #[img(src="images/speach-bubble.png")] 17
+
+                        //start one blog
+                        div(class="wow fadeInUp col-12 col-md-6 offset-md-3 offset-lg-0 col-lg" data-wow-delay=".6s"  data-wow-duration="2s")
+                            .card
+                                .img-holder
+                                    img(src="images/blog3.png")
+                                    span.date #[h3 12] jan
+                                div(class="card-body")
+                                    h5.card-title incididunt ut labore et dolore
+                                    p.card-text Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                div.statistics
+                                    span #[img(src="images/view.png")] 432
+                                    span #[img(src="images/speach-bubble.png")] 156
+        //===========================
+        //    start map section
+        //===========================        
+        section.map
+            .overlay
+                .text-content.text-center
+                    img(src="images/pin.png", alt="")
+                    h2 open map
+                    .hr-holder
+                        hr
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54564.25237971811!2d31.305496940046186!3d31.268742901961087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f76dc2853b5c41%3A0xa5c9d49824f4776e!2sAsh%20Shawami%2C%20Belkas%2C%20Dakahlia%20Governorate!5e0!3m2!1sen!2seg!4v1568734430683!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        //===========================
+        //    start footer 
+        //===========================        
+        footer
+            .container
+                .row
+                    //=========
+                    //start brand and social
+                    //=========
+                    div(class="col-12 col-md-6 col-lg")
+                        .heading
+                            h1 MoGo
+                        .description
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
+                            .social
+                                span 15k followers
+                                div
+                                    span follow us
+                                    a(href="https://www.facebook.com/walidloll", target="_blank") #[i(class="fab fa-facebook-f")]
+                                    a(href="https://www.facebook.com/walidloll", target="_blank") #[i(class="fab fa-youtube")]
+                                    a(href="https://www.facebook.com/walidloll", target="_blank") #[i(class="fab fa-google-plus-g")]
+                                    a(href="https://twitter.com/walidelloll", target="_blank") #[i(class="fab fa-twitter")]
+                                    a(href="https://www.instagram.com/walid.elloll/", target="_blank") #[i(class="fab fa-instagram")]
+                                    a(href="https://www.instagram.com/walid.elloll/", target="_blank") #[i(class="fab fa-tumblr")]
+                            a(href="#" class="btn") subscribe
+                    //=========
+                    //start footer blogs
+                    //=========
+                    div(class="col-12 col-md-6 col-lg")
+                        .heading
+                            h5 blogs
+                        .blogs
+                            //one blog
+                            .blog
+                                .img 
+                                    img(src="images/footer-blog1.png")
+                                .desc
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    span jan 9, 2016
+                            
+                            //one blog
+                            .blog
+                                .img 
+                                    img(src="images/footer-blog2.png")
+                                .desc
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    span jan 9, 2016
+
+                            //one blog
+                            .blog
+                                .img 
+                                    img(src="images/footer-blog3.png")
+                                .desc
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    span jan 9, 2016
+                    //=========
+                    //start instagram pics
+                    //=========
+                    div(class="col-12 col-lg")
+                        .heading
+                            h5 instagram
+                        .instagram
+                            img(src="images/instagram1.png")
+                            img(src="images/instagram2.png")
+                            img(src="images/instagram3.png")
+                            img(src="images/instagram4.png")
+                            img(src="images/instagram5.png")
+                            img(src="images/instagram6.png")
+                            img(src="images/instagram7.png")
+                            img(src="images/instagram8.png")
+                            img(src="images/instagram9.png")
+                        a(class="a", href="https://www.instagram.com/walid.elloll/" target="_blank") view more photos
+                .copy
+                    p &copy; 2016 MoGo free PSD template by #[span MR. Loll]
+
+
+
+
+    script(src="js/jQuery-3-4-1.min.js")
+    script(src="js/fontawesome.min.js")
+    script(src="js/jquery.nicescroll.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/wow.min.js")
+    script(src="js/JavaScript.js")
+    script.
+        new WOW().init();
+    
+    
+    
+    
+    
+    
+    
+    
